@@ -1,6 +1,7 @@
 <!DOCType html>
 <html>
   <head>
+      <script src="script.js"></script>
       <title>Unit Conversions</title>
       <link rel="stylesheet" type="text/css" href="unitConvStyle.css">
   </head>
@@ -30,7 +31,7 @@
               <input type="number" id="c"> <br/>
 
               <!-- Conversion button -->
-              <button id="temperature" class="convButton"> Convert </button> <br/>
+              <button id="temperature" class="convButton" onclick="convertTemp()"> Convert </button> <br/>
 
               <!-- Label for temperature output -->
               <input type="number" id="f"> <br/>
@@ -58,7 +59,7 @@
               <input type="number" id="kg"> <br/>
 
               <!-- Conversion button -->
-              <button id="weight" class="convButton"> Convert </button> <br/>
+              <button id="weight" class="convButton" onclick="convertWeight()"> Convert </button> <br/>
 
               <!-- Label for pounds -->
               <label for="Weight">Pounds</label> <br/>
@@ -85,7 +86,7 @@
               <input type="number" id="km"> <br/>
 
               <!-- Conversion button -->
-              <button id="distance" class="convButton"> Convert </button> <br/>
+              <button id="distance" class="convButton" onclick="convertDistance()"> Convert </button> <br/>
 
               <!-- Label for miles -->
               <label for="Distance">Miles</label> <br/>
@@ -93,7 +94,7 @@
             </fieldset>
           </article>
           <aside>
-            To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+            To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
           </aside>
         </div>
       </section>
